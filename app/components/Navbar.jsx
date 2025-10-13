@@ -1,18 +1,21 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Ongoing', href: '/ongoing-projects' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -25,7 +28,7 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="bg-black/20 backdrop-blur-md sticky top-0 z-50 border-b border-white/10"
+      className="bg-transparent backdrop-blur-md fixed top-0 left-0 right-0 z-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -38,18 +41,18 @@ const Navbar = () => {
             <Link href="/" className="flex items-center">
               <Image
                 src="/Images/logo.png"
-                alt="GROUP Logo"
-                width={40}
-                height={40}
-                className="h-10 w-auto"
+                alt="SKA Group Logo"
+                width={200}
+                height={200}
+                className="object-contain drop-shadow-lg"
+                priority
               />
-              <span className="ml-2 text-xl font-bold text-white drop-shadow-lg">GROUP</span>
             </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="bg-gray-500/20 backdrop-blur-sm rounded-full px-6 py-2 flex items-center space-x-1">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item.name}
@@ -59,33 +62,38 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.href}
-                    className="text-white hover:text-slate-200 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 relative group drop-shadow-sm hover:bg-white/10"
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                      pathname === item.href
+                        ? 'bg-yellow-400 text-white' 
+                        : 'text-white hover:text-yellow-400'
+                    }`}
                   >
                     {item.name}
-                    <motion.div
-                      className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"
-                      whileHover={{ width: "100%" }}
-                    />
                   </Link>
                 </motion.div>
               ))}
             </div>
           </div>
 
-          {/* Get Quote Button */}
+          {/* Contact Us Button */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8 }}
             className="hidden md:block"
           >
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(255,255,255,0.2)" }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-slate-900 px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
-            >
-              Get Quote
-            </motion.button>
+            <Link href="/contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-black border-2 border-yellow-400 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-yellow-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-transparent flex items-center"
+              >
+                Contact Us
+                <svg className="w-4 h-4 ml-2 bg-yellow-400 text-black rounded-full p-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </motion.button>
+            </Link>
           </motion.div>
 
           {/* Mobile menu button */}
@@ -135,7 +143,11 @@ const Navbar = () => {
                 >
                   <Link
                     href={item.href}
-                    className="text-white hover:text-slate-200 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 drop-shadow-sm hover:bg-white/10"
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 drop-shadow-sm ${
+                      pathname === item.href
+                        ? 'bg-yellow-400 text-black'
+                        : 'text-white hover:text-slate-200 hover:bg-white/10'
+                    }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
@@ -148,14 +160,19 @@ const Navbar = () => {
                 transition={{ delay: navItems.length * 0.1 }}
                 className="pt-4"
               >
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full bg-white text-slate-900 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Get Quote
-                </motion.button>
+                <Link href="/contact">
+                  <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="w-full bg-black border-2 border-yellow-400 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-yellow-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-transparent flex items-center justify-center"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Contact Us
+                    <svg className="w-4 h-4 ml-2 bg-yellow-400 text-black rounded-full p-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </motion.button>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

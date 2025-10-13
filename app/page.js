@@ -1,24 +1,21 @@
 import Hero from "./components/Hero";
-import VisionMission from "./components/VisionMission";
-import Services from "./components/Services";
-import AboutUs from "./components/AboutUs";
-import GovernanceTeam from "./components/GovernanceTeam";
-import CompanyOverview from "./components/CompanyOverview";
+import WhatWeDo from "./components/WhatWeDo";
 import FeaturedProjects from "./components/FeaturedProjects";
-import Contact from "./components/Contact";
-import Features from "./components/Features";
+import OngoingProjects from "./components/OngoingProjects";
+import OurClients from "./components/OurClients";
+import MeetOurVisionaries from "./components/MeetOurVisionaries";
+import CTASection from "./components/CTASection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-white">
       <Hero />
-      <VisionMission />
-      <Services />
-      <AboutUs />
-      <GovernanceTeam />
-      <CompanyOverview />
+      <WhatWeDo />
       <FeaturedProjects />
-      <Contact />
+      <OngoingProjects />
+      <OurClients />
+      <MeetOurVisionaries />
+      <CTASection />
     </main>
   );
 }

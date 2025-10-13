@@ -6,13 +6,20 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-black text-white overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-transparent"></div>
-        <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
+    <section className="relative min-h-screen text-white overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/Images/indian-city-buildings-scene.jpg"
+          alt="Indian city buildings construction scene"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Golden gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 via-transparent to-transparent"></div>
       </div>
 
       {/* Main Content */}
@@ -72,7 +79,7 @@ export default function Hero() {
               Building the Future, Today
             </motion.h2>
             <motion.p 
-              className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
@@ -99,12 +106,12 @@ export default function Hero() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
           >
             <motion.div 
-              className="text-center p-6 bg-gray-900/50 rounded-lg border border-gray-800"
+              className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.1)" }}
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.2)" }}
             >
               <motion.div 
                 className="text-4xl font-bold text-yellow-400 mb-2"
@@ -115,16 +122,16 @@ export default function Hero() {
               >
                 300+
               </motion.div>
-              <div className="text-sm text-gray-300">Projects Completed</div>
+              <div className="text-sm text-gray-200">Projects Completed</div>
             </motion.div>
             
             <motion.div 
-              className="text-center p-6 bg-gray-900/50 rounded-lg border border-gray-800"
+              className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.1)" }}
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.2)" }}
             >
               <motion.div 
                 className="text-4xl font-bold text-yellow-400 mb-2"
@@ -135,16 +142,16 @@ export default function Hero() {
               >
                 ₹89K+
               </motion.div>
-              <div className="text-sm text-gray-300">Crores Project Value</div>
+              <div className="text-sm text-gray-200">Crores Project Value</div>
             </motion.div>
             
             <motion.div 
-              className="text-center p-6 bg-gray-900/50 rounded-lg border border-gray-800"
+              className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.6 }}
               viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.1)" }}
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.2)" }}
             >
               <motion.div 
                 className="text-4xl font-bold text-yellow-400 mb-2"
@@ -155,7 +162,7 @@ export default function Hero() {
               >
                 30+
               </motion.div>
-              <div className="text-sm text-gray-300">Years Experience</div>
+              <div className="text-sm text-gray-200">Years Experience</div>
             </motion.div>
           </motion.div>
 
@@ -184,7 +191,7 @@ export default function Hero() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 1.6 + index * 0.1 }}
                   viewport={{ once: true, amount: 0.3 }}
-                  className="px-4 py-2 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-700"
+                  className="px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full text-sm border border-white/30"
                   whileHover={{ 
                     backgroundColor: "rgba(255, 193, 7, 0.2)",
                     borderColor: "rgb(255, 193, 7)",
@@ -233,32 +240,6 @@ export default function Hero() {
             </motion.button>
           </motion.div>
 
-          {/* Belief Statement */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2.2 }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="text-center mt-16"
-          >
-            <motion.p 
-              className="text-2xl md:text-3xl font-light italic text-gray-400"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 2.4 }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <motion.span 
-                className="text-yellow-400"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 2.6 }}
-                viewport={{ once: true, amount: 0.3 }}
-              >
-                Belief.
-              </motion.span> Stronger Than Steel.
-            </motion.p>
-          </motion.div>
         </div>
       </div>
 
