@@ -44,7 +44,7 @@ const Navbar = () => {
                 alt="SKA Group Logo"
                 width={200}
                 height={200}
-                className="object-contain drop-shadow-lg"
+                className="object-contain drop-shadow-lg h-32 w-32 lg:h-40 lg:w-40" 
                 priority
               />
             </Link>
