@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} font-raleway antialiased`}>
+      <body className={`${raleway.variable} overflow-hidden font-raleway antialiased`}>
         <Navbar />
         {children}
       </body>
