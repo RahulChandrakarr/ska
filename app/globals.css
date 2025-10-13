@@ -2,10 +2,14 @@
 @import "tailwindcss";
 
 /* Set Raleway as default font for the entire application */
-* {
+html, body {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
 }
 
 /* Custom grid pattern for construction theme */

@@ -6,12 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        'raleway': ['Raleway', 'sans-serif'],
-        'sans': ['Raleway', 'sans-serif'],
-      },
+    fontFamily: {
+      'sans': ['Raleway', 'sans-serif'],
+      'raleway': ['Raleway', 'sans-serif'],
     },
+    extend: {},
   },
   plugins: [],
 }
