@@ -50,7 +50,7 @@ const Navbar = () => {
             </Link>
           </motion.div>
 
-          {/* Desktop Navigation  sdfasdf*/}
+          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="bg-gray-500/20 backdrop-blur-sm rounded-full px-6 py-2 flex items-center space-x-1">
               {navItems.map((item, index) => (
