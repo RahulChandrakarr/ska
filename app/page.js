@@ -8,7 +8,7 @@ import CTASection from "./components/CTASection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white overflow-hidden w-screen">
+    <main className="min-h-screen bg-white w-screen overflow-x-hidden">
       <Hero />
       <WhatWeDo />
       <FeaturedProjects />
