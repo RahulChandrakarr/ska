@@ -93,7 +93,7 @@ export default function Hero() {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 Build with confidence!
-              </motion.span> Quality, reliability, and innovation—your trusted partner for exceptional construction solutions.
+              </motion.span> Quality, reliability, and innovation your trusted partner for exceptional construction solutions.
             </motion.p>
           </motion.div>
 
