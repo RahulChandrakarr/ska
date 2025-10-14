@@ -91,7 +91,7 @@ export default function CTASection() {
               >
                 <Link href="/contact">
                   <motion.button
-                    className="px-8 py-4 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                    className="px-8 py-4 bg-[#C39A41] text-black font-bold rounded-lg hover:bg-[#C39A41]0 transition-colors duration-300 shadow-lg hover:shadow-xl"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

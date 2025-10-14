@@ -24,7 +24,7 @@ export default function OtherPagesHeroSection({
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
         {/* Golden gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/20 via-transparent to-transparent"></div>
       </div>
 
       {/* Main Content */}

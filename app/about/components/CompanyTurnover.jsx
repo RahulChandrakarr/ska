@@ -49,7 +49,7 @@ export default function CompanyTurnover() {
             >
               Demonstrating consistent growth through 
               <motion.span
-                className="text-yellow-400"
+                className="text-[#C39A41]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -82,7 +82,7 @@ export default function CompanyTurnover() {
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="border-b-2 border-yellow-400">
+                    <tr className="border-b-2 border-[#C39A41]">
                       <th className="text-left py-3 px-4 font-semibold text-gray-900">Year</th>
                       <th className="text-right py-3 px-4 font-semibold text-gray-900">Turnover (in Cr.)</th>
                     </tr>
@@ -91,7 +91,7 @@ export default function CompanyTurnover() {
                     {skaGroupData.map((row, index) => (
                       <motion.tr
                         key={row.year}
-                        className="border-b border-gray-200 hover:bg-yellow-50 transition-colors"
+                        className="border-b border-gray-200 hover:bg-[#C39A41] transition-colors"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.0 + index * 0.1 }}
@@ -127,7 +127,7 @@ export default function CompanyTurnover() {
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="border-b-2 border-yellow-400">
+                    <tr className="border-b-2 border-[#C39A41]">
                       <th className="text-left py-3 px-4 font-semibold text-gray-900">Year</th>
                       <th className="text-right py-3 px-4 font-semibold text-gray-900">Turnover (in Cr.)</th>
                     </tr>
@@ -136,7 +136,7 @@ export default function CompanyTurnover() {
                     {hillbrowData.map((row, index) => (
                       <motion.tr
                         key={row.year}
-                        className="border-b border-gray-200 hover:bg-yellow-50 transition-colors"
+                        className="border-b border-gray-200 hover:bg-[#C39A41] transition-colors"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}

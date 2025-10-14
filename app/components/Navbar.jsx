@@ -64,8 +64,8 @@ const Navbar = () => {
                     href={item.href}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                       pathname === item.href
-                        ? 'bg-yellow-400 text-white' 
-                        : 'text-white hover:text-yellow-400'
+                        ? 'bg-[#C39A41] text-white' 
+                        : 'text-white hover:text-[#C39A41]'
                     }`}
                   >
                     {item.name}
@@ -86,10 +86,10 @@ const Navbar = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-black border-2 border-yellow-400 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-yellow-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-transparent flex items-center"
+                className="bg-black border-2 border-[#C39A41] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-[#C39A41] hover:text-black focus:outline-none focus:ring-2 focus:ring-[#C39A41] focus:ring-offset-2 focus:ring-offset-transparent flex items-center"
               >
                 Contact Us
-                <svg className="w-4 h-4 ml-2 bg-yellow-400 text-black rounded-full p-1" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 ml-2 bg-[#C39A41] text-black rounded-full p-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </motion.button>
@@ -145,7 +145,7 @@ const Navbar = () => {
                     href={item.href}
                     className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 drop-shadow-sm ${
                       pathname === item.href
-                        ? 'bg-yellow-400 text-black'
+                        ? 'bg-[#C39A41] text-black'
                         : 'text-white hover:text-slate-200 hover:bg-white/10'
                     }`}
                     onClick={() => setIsOpen(false)}
@@ -164,11 +164,11 @@ const Navbar = () => {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-black border-2 border-yellow-400 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-yellow-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-transparent flex items-center justify-center"
+                    className="w-full bg-black border-2 border-[#C39A41] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#C39A41] hover:text-black focus:outline-none focus:ring-2 focus:ring-[#C39A41] focus:ring-offset-2 focus:ring-offset-transparent flex items-center justify-center"
                     onClick={() => setIsOpen(false)}
                   >
                     Contact Us
-                    <svg className="w-4 h-4 ml-2 bg-yellow-400 text-black rounded-full p-1" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 ml-2 bg-[#C39A41] text-black rounded-full p-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                     </svg>
                   </motion.button>

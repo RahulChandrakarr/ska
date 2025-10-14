@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
         {/* Golden gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/20 via-transparent to-transparent"></div>
       </div>
 
       {/* Main Content */}
@@ -50,7 +51,7 @@ export default function Hero() {
                 SKA
               </motion.span>
               <motion.span 
-                className="text-yellow-400 ml-4"
+                className="text-[#C39A41] ml-4"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -86,7 +87,7 @@ export default function Hero() {
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.span 
-                className="text-yellow-400 font-semibold"
+                className="text-[#C39A41] font-semibold"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
@@ -114,7 +115,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.2)" }}
             >
               <motion.div 
-                className="text-4xl font-bold text-yellow-400 mb-2"
+                className="text-4xl font-bold text-[#C39A41] mb-2"
                 initial={{ scale: 0.5 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.4 }}
@@ -134,7 +135,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.2)" }}
             >
               <motion.div 
-                className="text-4xl font-bold text-yellow-400 mb-2"
+                className="text-4xl font-bold text-[#C39A41] mb-2"
                 initial={{ scale: 0.5 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.6 }}
@@ -154,7 +155,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, backgroundColor: "rgba(255, 193, 7, 0.2)" }}
             >
               <motion.div 
-                className="text-4xl font-bold text-yellow-400 mb-2"
+                className="text-4xl font-bold text-[#C39A41] mb-2"
                 initial={{ scale: 0.5 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.5, delay: 1.8 }}
@@ -175,7 +176,7 @@ export default function Hero() {
             className="text-center"
           >
             <motion.h3 
-              className="text-xl md:text-2xl font-semibold mb-6 text-yellow-400"
+              className="text-xl md:text-2xl font-semibold mb-6 text-[#C39A41]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.4 }}
@@ -212,32 +213,36 @@ export default function Hero() {
             viewport={{ once: true, amount: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <motion.button
-              className="px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg text-lg"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 1.8 }}
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ scale: 1.05, backgroundColor: "rgb(255, 193, 7)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              View Our Projects
-            </motion.button>
-            <motion.button
-              className="px-8 py-4 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg text-lg"
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 2.0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              whileHover={{ 
-                scale: 1.05, 
-                backgroundColor: "rgb(255, 193, 7)",
-                color: "black"
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Get In Touch
-            </motion.button>
+            <Link href="/projects">
+              <motion.button
+                className="px-8 py-4 bg-[#C39A41] text-black font-semibold rounded-lg text-lg"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 1.8 }}
+                viewport={{ once: true, amount: 0.3 }}
+                whileHover={{ scale: 1.05, backgroundColor: "rgb(255, 193, 7)" }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View Our Projects
+              </motion.button>
+            </Link>
+            <Link href="/contact">
+              <motion.button
+                className="px-8 py-4 border-2 border-[#C39A41] text-[#C39A41] font-semibold rounded-lg text-lg"
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 2.0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                whileHover={{ 
+                  scale: 1.05, 
+                  backgroundColor: "rgb(255, 193, 7)",
+                  color: "black"
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get In Touch
+              </motion.button>
+            </Link>
           </motion.div>
 
         </div>
@@ -254,12 +259,12 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-yellow-400 rounded-full flex justify-center"
+          className="w-6 h-10 border-2 border-[#C39A41] rounded-full flex justify-center"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-yellow-400 rounded-full mt-2"
+            className="w-1 h-3 bg-[#C39A41] rounded-full mt-2"
           />
         </motion.div>
       </motion.div>

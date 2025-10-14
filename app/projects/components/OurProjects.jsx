@@ -74,7 +74,7 @@ export default function OurProjects() {
           >
             Showcasing excellence through 
             <motion.span
-              className="text-yellow-400"
+              className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -160,7 +160,7 @@ export default function OurProjects() {
                     
                     {/* Project Number Overlay */}
                     <div className="absolute top-6 right-6">
-                      <div className="w-12 h-12 bg-yellow-400 text-black font-bold rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#C39A41] text-black font-bold rounded-full flex items-center justify-center">
                         {project.id.toString().padStart(2, '0')}
                       </div>
                     </div>

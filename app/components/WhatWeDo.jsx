@@ -86,7 +86,7 @@ export default function WhatWeDo() {
           >
             From large-scale infrastructure to modern real estate developments, our work  {" "}
             <motion.span
-              className="text-yellow-400"
+              className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -153,7 +153,7 @@ export default function WhatWeDo() {
                     >
                       {service.title}
                     </motion.h3>
-                    <hr className="border-yellow-400 border-2 mb-3" />
+                    <hr className="border-[#C39A41] border-2 mb-3" />
                     <motion.p
                       className="text-gray-600 leading-relaxed"
                       initial={{ opacity: 0, y: 10 }}

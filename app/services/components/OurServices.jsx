@@ -87,7 +87,7 @@ export default function OurServices() {
         >
           Comprehensive construction solutions with 
           <motion.span
-            className="text-yellow-400"
+            className="text-[#C39A41]"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -147,7 +147,7 @@ export default function OurServices() {
 
                     {/* Learn More Button */}
                     {/* <motion.button
-                      className="inline-flex items-center px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-500 transition-colors duration-300"
+                      className="inline-flex items-center px-6 py-3 bg-[#C39A41] text-black font-semibold rounded-lg hover:bg-[#C39A41]0 transition-colors duration-300"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.2 + 0.6 }}
@@ -186,7 +186,7 @@ export default function OurServices() {
                     
                     {/* Service Number Overlay */}
                     <div className="absolute top-6 right-6">
-                      <div className="w-12 h-12 bg-yellow-400 text-black font-bold rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#C39A41] text-black font-bold rounded-full flex items-center justify-center">
                         {service.id.toString().padStart(2, '0')}
                       </div>
                     </div>

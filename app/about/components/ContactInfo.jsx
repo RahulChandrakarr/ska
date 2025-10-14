@@ -33,7 +33,7 @@ export default function ContactInfo() {
             >
               Get in touch with our team of 
               <motion.span
-                className="text-yellow-400"
+                className="text-[#C39A41]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.8 }}

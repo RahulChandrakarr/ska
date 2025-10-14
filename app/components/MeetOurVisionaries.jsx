@@ -62,7 +62,7 @@ export default function MeetOurVisionaries() {
           >
             Guided by visionary leaders who bring{" "}
             <motion.span
-              className="text-yellow-400"
+              className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -71,7 +71,7 @@ export default function MeetOurVisionaries() {
               experience
             </motion.span>,{" "}
             <motion.span
-              className="text-yellow-400"
+              className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.0 }}
@@ -80,7 +80,7 @@ export default function MeetOurVisionaries() {
               integrity
             </motion.span>, and{" "}
             <motion.span
-              className="text-yellow-400"
+              className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.2 }}
@@ -140,7 +140,7 @@ export default function MeetOurVisionaries() {
                     </motion.h3>
                     
                     <motion.div
-                      className="text-yellow-400 font-semibold mb-3"
+                      className="text-[#C39A41] font-semibold mb-3"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 1.1 + index * 0.2 }}
@@ -170,7 +170,7 @@ export default function MeetOurVisionaries() {
                       {visionary.expertise.map((skill, skillIndex) => (
                         <span
                           key={skillIndex}
-                          className="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-full"
+                          className="px-3 py-1 bg-[#C39A41] text-yellow-700 text-xs font-medium rounded-full"
                         >
                           {skill}
                         </span>
