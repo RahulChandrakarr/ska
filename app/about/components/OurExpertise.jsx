@@ -103,7 +103,7 @@ export default function OurExpertise() {
               </motion.div>
             ))}
           </div>
-
+{/* 
           <motion.div
             className="mt-16 bg-gray-100 rounded-2xl p-8 border-l-4 border-gray-300"
             initial={{ opacity: 0, y: 30 }}
@@ -120,7 +120,7 @@ export default function OurExpertise() {
             >
               This profile clearly demonstrates our expertise in the field of infrastructure development.
             </motion.p>
-          </motion.div>
+          </motion.div> */}
         </div>
       
     </section>

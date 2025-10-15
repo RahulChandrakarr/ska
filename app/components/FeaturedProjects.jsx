@@ -68,7 +68,7 @@ export default function FeaturedProjects() {
             viewport={{ once: true, amount: 0.3 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
           >
-            Delivering exceptional projects with quality, innovation, and precision,
+            Delivering exceptional projects with quality, innovation, and precision,{" "}
             <motion.span
               className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}

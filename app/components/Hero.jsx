@@ -18,7 +18,7 @@ export default function Hero() {
           priority
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         {/* Golden gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/20 via-transparent to-transparent"></div>
       </div>
@@ -211,7 +211,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link href="/projects">
               <motion.button
@@ -236,7 +236,7 @@ export default function Hero() {
                 whileHover={{ 
                   scale: 1.05, 
                   backgroundColor: "rgb(255, 193, 7)",
-                  color: "black"
+                  color: "white"
                 }}
                 whileTap={{ scale: 0.95 }}
               >

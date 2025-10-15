@@ -44,3 +44,31 @@ html, body {
 h1, h2, h3, h4, h5, h6, p, span, div, a, button, input, textarea, select {
   font-family: var(--font-raleway), sans-serif;
 }
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+/* Continuous scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+  width: 300%; /* Triple width to accommodate tripled content */
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

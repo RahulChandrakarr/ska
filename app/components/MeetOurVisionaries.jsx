@@ -160,22 +160,7 @@ export default function MeetOurVisionaries() {
                     </motion.p>
 
                     {/* Expertise Tags */}
-                    <motion.div
-                      className="flex flex-wrap gap-2"
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: 1.3 + index * 0.2 }}
-                      viewport={{ once: true, amount: 0.3 }}
-                    >
-                      {visionary.expertise.map((skill, skillIndex) => (
-                        <span
-                          key={skillIndex}
-                          className="px-3 py-1 bg-[#C39A41] text-yellow-700 text-xs font-medium rounded-full"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </motion.div>
+                    
                   </div>
                 </motion.div>
               </motion.div>

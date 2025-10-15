@@ -261,7 +261,7 @@ This message was sent from the SKA Group website contact form.
                 {/* Submit Button */}
                 <motion.button
                   type="submit"
-                  className="w-full bg-black text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-3 hover:bg-gray-800 transition-colors duration-300"
+                  className="w-full bg-black text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-3 hover:bg-gray-800 transition-colors duration-300 mx-auto"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

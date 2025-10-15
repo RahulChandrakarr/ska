@@ -152,19 +152,7 @@ export default function OurPeople() {
                   transition={{ duration: 0.6, delay: 2.2 }}
                   viewport={{ once: true, amount: 0.3 }}
                 >
-                  {keyPoints.map((point, index) => (
-                    <motion.li
-                      key={index}
-                      className="flex items-center space-x-3"
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, delay: 2.4 + index * 0.1 }}
-                      viewport={{ once: true, amount: 0.3 }}
-                    >
-                      <span className="text-yellow-500 text-xl">✓</span>
-                      <span className="text-gray-700">{point}</span>
-                    </motion.li>
-                  ))}
+                 
                 </motion.ul>
               </div>
             </motion.div>

@@ -114,7 +114,7 @@ export default function OurClients() {
           viewport={{ once: true, amount: 0.3 }}
           className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
         >
-          Proudly associated with leading corporations and government organizations who trust our commitment to 
+          Proudly associated with leading corporations and government organizations who trust our commitment to  {" "}
           <motion.span
             className="text-[#C39A41]"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -127,37 +127,62 @@ export default function OurClients() {
         </motion.h2>
       </motion.div>
 
-        {/* Clients Grid */}
+        {/* Clients Grid - Continuous Auto Scroll */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="max-w-6xl mx-auto"
+          className="max-w-full mx-auto"
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
-            {clients.map((client, index) => (
-              <motion.div
-                key={client.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="group"
-              >
-                <motion.div
-                  className="bg-gray-50 rounded-xl p-6 h-32 flex items-center justify-center border border-gray-100"
+          <div className="relative overflow-hidden">
+            <div className="flex gap-6 md:gap-8 animate-scroll">
+              {/* First set of clients */}
+              {clients.map((client, index) => (
+                <div
+                  key={`first-${client.id}`}
+                  className="group flex-shrink-0 flex items-center justify-center"
                 >
                   <Image
                     src={client.logo}
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain"
+                    className="object-contain filter grayscale"
                   />
-                </motion.div>
-              </motion.div>
-            ))}
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {clients.map((client, index) => (
+                <div
+                  key={`second-${client.id}`}
+                  className="group flex-shrink-0 flex items-center justify-center"
+                >
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    width={120}
+                    height={80}
+                    className="object-contain filter grayscale"
+                  />
+                </div>
+              ))}
+              {/* Third set for extra smoothness */}
+              {clients.map((client, index) => (
+                <div
+                  key={`third-${client.id}`}
+                  className="group flex-shrink-0 flex items-center justify-center"
+                >
+                  <Image
+                    src={client.logo}
+                    alt={client.name}
+                    width={120}
+                    height={80}
+                    className="object-contain filter grayscale"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
 

@@ -49,7 +49,7 @@ export default function page() {
       
       <MeetOurVisionaries />
       
-      <ContactInfo />
+      {/* <ContactInfo /> */}
       
       <CTASection />
     </div>
