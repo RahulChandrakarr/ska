@@ -57,8 +57,10 @@ export default function WhatWeDo() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Horizontal pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#C39A41]/3 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
        {/* Section Header */}
         {/* Header */}
         <motion.div
@@ -73,7 +75,7 @@ export default function WhatWeDo() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+            className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
           >
             • What we do
           </motion.div>
@@ -82,7 +84,7 @@ export default function WhatWeDo() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
           >
             From large-scale infrastructure to modern real estate developments, our work  {" "}
             <motion.span
@@ -145,7 +147,7 @@ export default function WhatWeDo() {
                   {/* Service Content */}
                   <div className="p-6">
                     <motion.h3
-                      className="text-xl font-bold text-gray-900 mb-3"
+                      className="text-xl font-bold text-white mb-3"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
@@ -155,7 +157,7 @@ export default function WhatWeDo() {
                     </motion.h3>
                     <hr className="border-[#C39A41] border-2 mb-3" />
                     <motion.p
-                      className="text-gray-600 leading-relaxed"
+                      className="text-gray-300 leading-relaxed"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}

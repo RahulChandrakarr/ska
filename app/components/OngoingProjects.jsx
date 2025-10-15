@@ -49,8 +49,10 @@ const ongoingProjects = [
 
 export default function OngoingProjects() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Vertical pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#C39A41]/2 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
        {/* Section Header */}
         {/* Header */}
         <motion.div
@@ -65,7 +67,7 @@ export default function OngoingProjects() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+            className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
           >
             • Ongoing Projects
           </motion.div>
@@ -74,9 +76,9 @@ export default function OngoingProjects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
           >
-            Delivering quality infrastructure with efficiency, precision, 
+            Delivering quality infrastructure with efficiency, precision, {" "}
             <motion.span
               className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}

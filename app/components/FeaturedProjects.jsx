@@ -41,8 +41,10 @@ const projects = [
 
 export default function FeaturedProjects() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/5 via-transparent to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         {/* Header */}
         <motion.div
@@ -57,7 +59,7 @@ export default function FeaturedProjects() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+            className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
           >
             • Featured Projects
           </motion.div>
@@ -66,7 +68,7 @@ export default function FeaturedProjects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
           >
             Delivering exceptional projects with quality, innovation, and precision,{" "}
             <motion.span
@@ -104,7 +106,7 @@ export default function FeaturedProjects() {
                   <div className="space-y-6">
                     {/* Project Number */}
                     <motion.div 
-                      className="text-6xl md:text-7xl font-bold text-gray-200"
+                      className="text-6xl md:text-7xl font-bold text-gray-400"
                       initial={{ scale: 0.5, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.6, delay: index * 0.2 + 0.4 }}
@@ -115,7 +117,7 @@ export default function FeaturedProjects() {
 
                     {/* Project Title */}
                     <motion.h3 
-                      className="text-3xl md:text-4xl font-bold text-gray-900"
+                      className="text-3xl md:text-4xl font-bold text-white"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.2 + 0.5 }}
@@ -126,7 +128,7 @@ export default function FeaturedProjects() {
 
                     {/* Project Description */}
                     <motion.p 
-                      className="text-lg text-gray-600 leading-relaxed"
+                      className="text-lg text-gray-300 leading-relaxed"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.2 + 0.6 }}
@@ -166,7 +168,7 @@ export default function FeaturedProjects() {
               {/* Divider Line */}
               {index < projects.length - 1 && (
                 <motion.div 
-                  className="mt-16 border-t border-gray-200"
+                  className="mt-16 border-t border-gray-700"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: index * 0.2 + 0.9 }}

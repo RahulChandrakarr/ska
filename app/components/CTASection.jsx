@@ -64,7 +64,7 @@ export default function CTASection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="max-w-4xl mx-auto mb-16"
           >
-            <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 text-center border border-gray-700">
+            <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 text-center border border-gray-600">
               <motion.h3
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
                 initial={{ opacity: 0, y: 20 }}
@@ -91,7 +91,7 @@ export default function CTASection() {
               >
                 <Link href="/contact">
                   <motion.button
-                    className="px-8 py-4 bg-[#C39A41] text-black font-bold rounded-lg hover:bg-[#C39A41]0 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                    className="px-8 py-4 bg-[#C39A41] text-black font-bold rounded-lg hover:bg-[#C39A41]/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -101,7 +101,7 @@ export default function CTASection() {
                 
                 <Link href="/projects">
                   <motion.button
-                    className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300"
+                    className="px-8 py-4 bg-transparent border-2 border-[#C39A41] text-[#C39A41] font-semibold rounded-lg hover:bg-[#C39A41] hover:text-black transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >

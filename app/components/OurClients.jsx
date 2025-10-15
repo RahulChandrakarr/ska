@@ -87,8 +87,10 @@ const clients = [
 
 export default function OurClients() {
   return (
-    <section className="py-20 bg-gray-50">
-    <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Radial pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-radial from-[#C39A41]/4 via-transparent to-transparent"></div>
+    <div className="container mx-auto px-4 relative z-10">
      {/* Section Header */}
       {/* Header */}
       <motion.div
@@ -103,7 +105,7 @@ export default function OurClients() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+            className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
         >
           • Our Clients
         </motion.div>
@@ -112,7 +114,7 @@ export default function OurClients() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
         >
           Proudly associated with leading corporations and government organizations who trust our commitment to  {" "}
           <motion.span

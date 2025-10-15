@@ -33,8 +33,10 @@ const visionaries = [
 
 export default function MeetOurVisionaries() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Diagonal pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#C39A41]/3 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
        {/* Section Header */}
         {/* Header */}
         <motion.div
@@ -49,7 +51,7 @@ export default function MeetOurVisionaries() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+            className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
           >
             • Meet Our Visionaries
           </motion.div>
@@ -58,7 +60,7 @@ export default function MeetOurVisionaries() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
           >
             Guided by visionary leaders who bring{" "}
             <motion.span
@@ -110,7 +112,7 @@ export default function MeetOurVisionaries() {
                 className="group"
               >
                 <motion.div
-                  className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100"
+                  className="bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-800"
                   
                 >
                   {/* Profile Image */}
@@ -130,7 +132,7 @@ export default function MeetOurVisionaries() {
                   {/* Content */}
                   <div className="p-6">
                     <motion.h3
-                      className="text-xl font-bold text-gray-900 mb-2"
+                      className="text-xl font-bold text-white mb-2"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 1.0 + index * 0.2 }}
@@ -150,7 +152,7 @@ export default function MeetOurVisionaries() {
                     </motion.div>
 
                     <motion.p
-                      className="text-gray-600 text-sm leading-relaxed mb-4"
+                      className="text-gray-300 text-sm leading-relaxed mb-4"
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: 1.2 + index * 0.2 }}
