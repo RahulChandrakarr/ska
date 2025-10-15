@@ -45,8 +45,10 @@ const projects = [
 
 export default function OurProjects() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Geometric pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#C39A41]/3 via-transparent to-[#C39A41]/5"></div>
+      <div className="container mx-auto px-4 relative z-10">
        {/* Section Header */}
         {/* Header */}
         <motion.div
@@ -61,7 +63,7 @@ export default function OurProjects() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+            className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
           >
             • Our Projects
           </motion.div>
@@ -70,9 +72,9 @@ export default function OurProjects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 g:w-1/2"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
           >
-            Showcasing excellence through 
+            Showcasing excellence through {" "}
             <motion.span
               className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -117,7 +119,7 @@ export default function OurProjects() {
                       viewport={{ once: true, amount: 0.3 }}
                       className="flex items-center gap-4 mb-6"
                     >
-                      <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+                      <h3 className="text-3xl md:text-4xl font-bold text-white">
                         {project.title}
                       </h3>
                     </motion.div>
@@ -125,7 +127,7 @@ export default function OurProjects() {
 
                     {/* Description */}
                     <motion.p
-                      className="text-lg text-gray-600 leading-relaxed"
+                      className="text-lg text-gray-300 leading-relaxed"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.2 + 0.6 }}
@@ -172,7 +174,7 @@ export default function OurProjects() {
               {/* Divider Line */}
               {index < projects.length - 1 && (
                 <motion.div 
-                  className="mt-20 border-t border-gray-200"
+                  className="mt-20 border-t border-gray-700"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   transition={{ duration: 0.8, delay: index * 0.2 + 0.8 }}

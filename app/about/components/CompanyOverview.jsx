@@ -5,8 +5,10 @@ import { motion } from 'framer-motion'
 
 export default function CompanyOverview() {
   return (
-        <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+        <section className="py-20 bg-black relative">
+      {/* Subtle diagonal pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/5 via-transparent to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
       
           {/* Company Header */}
           <motion.div
@@ -21,7 +23,7 @@ export default function CompanyOverview() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+              className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
             >
               • Company Overview
             </motion.div>
@@ -30,7 +32,7 @@ export default function CompanyOverview() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 "
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 "
             >
               Building the Future, Today with 
               <motion.span
@@ -54,7 +56,7 @@ export default function CompanyOverview() {
             className="mb-16"
           >
             <motion.h3
-              className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center"
+              className="text-3xl md:text-4xl font-bold text-white mb-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.0 }}
@@ -71,10 +73,10 @@ export default function CompanyOverview() {
                 transition={{ duration: 0.8, delay: 1.2 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-300 leading-relaxed text-lg">
                   SKA Group is widely recognized for our unwavering commitment to excellence. With a legacy spanning several decades, we have earned the trust of our clients as a reliable partner in transforming visions into reality. Our relentless pursuit of superior results and innovative solutions sets us apart.
                 </p>
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-300 leading-relaxed text-lg">
                   From concept to completion, we prioritize efficiency, sustainability, and cutting-edge solutions to create structures that stand the test of time. Our unwavering dedication to client satisfaction and our ability to execute complex projects with finesse set us apart in the industry.
                 </p>
               </motion.div>
@@ -86,17 +88,17 @@ export default function CompanyOverview() {
                 transition={{ duration: 0.8, delay: 1.4 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-300 leading-relaxed text-lg">
                   At SKA Group, we don't just build structures—we bring dreams to life with passion, integrity, and expertise. We empower visions with our proven expertise and a track record of delivering exceptional outcomes.
                 </p>
                 <motion.div 
-                  className="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-300"
+                  className="bg-gray-900 p-6 rounded-lg border-l-4 border-[#C39A41]"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.6 }}
                   viewport={{ once: true, amount: 0.3 }}
                 >
-                  <p className="text-gray-800 font-medium italic">
+                  <p className="text-white font-medium italic">
                     "We don't just build structures—we bring dreams to life with passion, integrity, and expertise."
                   </p>
                 </motion.div>

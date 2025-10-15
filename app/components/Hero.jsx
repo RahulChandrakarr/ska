@@ -206,7 +206,7 @@ export default function Hero() {
           </motion.div>
 
           {/* CTA Buttons */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.6 }}
@@ -243,7 +243,7 @@ export default function Hero() {
                 Get In Touch
               </motion.button>
             </Link>
-          </motion.div>
+          </motion.div> */}
 
         </div>
       </div>

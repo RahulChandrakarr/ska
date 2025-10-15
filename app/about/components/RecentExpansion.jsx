@@ -24,8 +24,10 @@ export default function RecentExpansion() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Diagonal pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#C39A41]/3 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
         
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -39,7 +41,7 @@ export default function RecentExpansion() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+              className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
             >
               • Recent Expansion
             </motion.div>
@@ -48,7 +50,7 @@ export default function RecentExpansion() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 "
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 "
             >
               Expanding our capabilities with 
               <motion.span
@@ -65,14 +67,14 @@ export default function RecentExpansion() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <motion.div
-              className="bg-gray-50 rounded-2xl p-8"
+              className="bg-gray-900 rounded-2xl p-8 border border-gray-800"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.h3
-                className="text-2xl font-bold text-gray-900 mb-6"
+                className="text-2xl font-bold text-white mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -88,25 +90,25 @@ export default function RecentExpansion() {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <div>
-                  <p className="font-semibold text-gray-900">TMT/CTD Bars Manufacturing</p>
-                  <p className="text-gray-600">Annual production capacity: 300,000 MT</p>
+                  <p className="font-semibold text-white">TMT/CTD Bars Manufacturing</p>
+                  <p className="text-gray-300">Annual production capacity: 300,000 MT</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">Hot Charging Method</p>
-                  <p className="text-gray-600">Advanced production technique</p>
+                  <p className="font-semibold text-white">Hot Charging Method</p>
+                  <p className="text-gray-300">Advanced production technique</p>
                 </div>
               </motion.div>
             </motion.div>
 
             <motion.div
-              className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8"
+              className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 border border-gray-800"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.h3
-                className="text-2xl font-bold text-gray-900 mb-6"
+                className="text-2xl font-bold text-white mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
@@ -124,15 +126,15 @@ export default function RecentExpansion() {
                 <div className="flex items-center space-x-3">
                   
                   <div>
-                    <p className="font-semibold text-gray-900">Urla Industrial Area</p>
-                    <p className="text-gray-600">Raipur, Chhattisgarh</p>
+                    <p className="font-semibold text-white">Urla Industrial Area</p>
+                    <p className="text-gray-300">Raipur, Chhattisgarh</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                  
                   <div>
-                    <p className="font-semibold text-gray-900">Siltara Industrial Area</p>
-                    <p className="text-gray-600">Raipur, Chhattisgarh</p>
+                    <p className="font-semibold text-white">Siltara Industrial Area</p>
+                    <p className="text-gray-300">Raipur, Chhattisgarh</p>
                   </div>
                 </div>
               </motion.div>
@@ -146,7 +148,7 @@ export default function RecentExpansion() {
             viewport={{ once: true, amount: 0.3 }}
           >
             <motion.h3
-              className="text-2xl font-bold text-gray-900 mb-8 text-center"
+              className="text-2xl font-bold text-white mb-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.6 }}
@@ -159,7 +161,7 @@ export default function RecentExpansion() {
               {facilities.map((facility, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 border border-gray-100"
+                  className="bg-gray-900 rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 border border-gray-800"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 1.8 + index * 0.1 }}
@@ -176,7 +178,7 @@ export default function RecentExpansion() {
                     {facility.icon}
                   </motion.div>
                   <motion.h4
-                    className="font-bold text-gray-900 mb-2"
+                    className="font-bold text-white mb-2"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 2.2 + index * 0.1 }}
@@ -185,7 +187,7 @@ export default function RecentExpansion() {
                     {facility.title}
                   </motion.h4>
                   <motion.p
-                    className="text-gray-600 text-sm"
+                    className="text-gray-300 text-sm"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 2.4 + index * 0.1 }}

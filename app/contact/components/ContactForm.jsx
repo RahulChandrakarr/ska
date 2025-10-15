@@ -47,8 +47,10 @@ This message was sent from the SKA Group website contact form.
   }
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Communication pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/3 via-transparent to-[#C39A41]/4"></div>
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -59,7 +61,7 @@ This message was sent from the SKA Group website contact form.
         >
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
             <motion.h1
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold text-white"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -69,9 +71,9 @@ This message was sent from the SKA Group website contact form.
             </motion.h1>
             
             <div className="flex items-center gap-4">
-              <div className="w-px h-16 bg-gray-300"></div>
+              <div className="w-px h-16 bg-gray-600"></div>
               <motion.p
-                className="text-lg text-gray-600 max-w-md"
+                className="text-lg text-gray-300 max-w-md"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -96,7 +98,7 @@ This message was sent from the SKA Group website contact form.
             >
               <div>
                 <motion.h2
-                  className="text-3xl font-bold text-gray-900 mb-4"
+                  className="text-3xl font-bold text-white mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
@@ -105,7 +107,7 @@ This message was sent from the SKA Group website contact form.
                   More Details
                 </motion.h2>
                 <motion.p
-                  className="text-lg text-gray-600 leading-relaxed"
+                  className="text-lg text-gray-300 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
@@ -132,8 +134,8 @@ This message was sent from the SKA Group website contact form.
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Address</h3>
-                    <p className="text-gray-600">SKA Group, NH-6, Road, near Treasure Island Mall, opposite College of Agriculture, Serikhedi, Jora, Chhattisgarh 492012</p>
+                    <h3 className="text-lg font-semibold text-white mb-1">Office Address</h3>
+                    <p className="text-gray-300">SKA Group, NH-6, Road, near Treasure Island Mall, opposite College of Agriculture, Serikhedi, Jora, Chhattisgarh 492012</p>
                   </div>
                 </motion.div>
 
@@ -151,8 +153,8 @@ This message was sent from the SKA Group website contact form.
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Call Us</h3>
-                    <p className="text-gray-600">91-9826000000</p>
+                    <h3 className="text-lg font-semibold text-white mb-1">Call Us</h3>
+                    <p className="text-gray-300">91-9826000000</p>
                   </div>
                 </motion.div>
 
@@ -170,8 +172,8 @@ This message was sent from the SKA Group website contact form.
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-1">Message Us</h3>
-                    <p className="text-gray-600">info@skagroup.com</p>
+                    <h3 className="text-lg font-semibold text-white mb-1">Message Us</h3>
+                    <p className="text-gray-300">info@skagroup.com</p>
                   </div>
                 </motion.div>
               </div>
@@ -183,7 +185,7 @@ This message was sent from the SKA Group website contact form.
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="bg-gray-50 p-8 rounded-2xl"
+              className="bg-gray-900 p-8 rounded-2xl border border-gray-800"
             >
               <motion.form
                 onSubmit={handleSubmit}
@@ -201,7 +203,7 @@ This message was sent from the SKA Group website contact form.
                     value={formData.fullName}
                     onChange={handleInputChange}
                     placeholder="Full name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300 bg-gray-800 text-white placeholder-gray-400"
                     required
                   />
                 </div>
@@ -214,7 +216,7 @@ This message was sent from the SKA Group website contact form.
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300 bg-gray-800 text-white placeholder-gray-400"
                     required
                   />
                 </div>
@@ -227,7 +229,7 @@ This message was sent from the SKA Group website contact form.
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="Phone number"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300 bg-gray-800 text-white placeholder-gray-400"
                     required
                   />
                 </div>
@@ -240,9 +242,9 @@ This message was sent from the SKA Group website contact form.
                     value={formData.service}
                     onChange={handleInputChange}
                     placeholder="Service"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300 bg-gray-800 text-white placeholder-gray-400"
                   />
-                  <p className="text-sm text-gray-500 mt-1">Ex: residential construction</p>
+                  <p className="text-sm text-gray-400 mt-1">Ex: residential construction</p>
                 </div>
 
                 {/* Message */}
@@ -287,7 +289,7 @@ This message was sent from the SKA Group website contact form.
         >
           <div className="max-w-6xl mx-auto">
             <motion.h2
-              className="text-3xl font-bold text-gray-900 mb-8 text-center"
+              className="text-3xl font-bold text-white mb-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.0 }}

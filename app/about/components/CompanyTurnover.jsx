@@ -21,8 +21,10 @@ export default function CompanyTurnover() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Vertical gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#C39A41]/3 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
         
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -36,7 +38,7 @@ export default function CompanyTurnover() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+              className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
             >
               • Company Turnover
             </motion.div>
@@ -45,7 +47,7 @@ export default function CompanyTurnover() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 "
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 "
             >
               Demonstrating consistent growth through 
               <motion.span
@@ -63,14 +65,14 @@ export default function CompanyTurnover() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* SKA Group Table */}
             <motion.div
-              className="bg-gray-50 rounded-2xl p-8"
+              className="bg-gray-900 rounded-2xl p-8 border border-gray-800"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.h3
-                className="text-2xl font-bold text-gray-900 mb-6 text-center"
+                className="text-2xl font-bold text-white mb-6 text-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
@@ -83,22 +85,22 @@ export default function CompanyTurnover() {
                 <table className="w-full">
                   <thead>
                     <tr className="border-b-2 border-[#C39A41]">
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900">Year</th>
-                      <th className="text-right py-3 px-4 font-semibold text-gray-900">Turnover (in Cr.)</th>
+                      <th className="text-left py-3 px-4 font-semibold text-white">Year</th>
+                      <th className="text-right py-3 px-4 font-semibold text-white">Turnover (in Cr.)</th>
                     </tr>
                   </thead>
                   <tbody>
                     {skaGroupData.map((row, index) => (
                       <motion.tr
                         key={row.year}
-                        className="border-b border-gray-200 hover:bg-[#C39A41] transition-colors"
+                        className="border-b border-gray-700 hover:bg-[#C39A41]/20 transition-colors"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.0 + index * 0.1 }}
                         viewport={{ once: true, amount: 0.3 }}
                       >
-                        <td className="py-3 px-4 text-gray-700">{row.year}</td>
-                        <td className="py-3 px-4 text-right font-semibold text-gray-900">{row.turnover}</td>
+                        <td className="py-3 px-4 text-gray-300">{row.year}</td>
+                        <td className="py-3 px-4 text-right font-semibold text-white">{row.turnover}</td>
                       </motion.tr>
                     ))}
                   </tbody>
@@ -108,14 +110,14 @@ export default function CompanyTurnover() {
 
             {/* Hillbrow Division Table */}
             <motion.div
-              className="bg-gray-50 rounded-2xl p-8"
+              className="bg-gray-900 rounded-2xl p-8 border border-gray-800"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true, amount: 0.3 }}
             >
               <motion.h3
-                className="text-2xl font-bold text-gray-900 mb-6 text-center"
+                className="text-2xl font-bold text-white mb-6 text-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
@@ -128,22 +130,22 @@ export default function CompanyTurnover() {
                 <table className="w-full">
                   <thead>
                     <tr className="border-b-2 border-[#C39A41]">
-                      <th className="text-left py-3 px-4 font-semibold text-gray-900">Year</th>
-                      <th className="text-right py-3 px-4 font-semibold text-gray-900">Turnover (in Cr.)</th>
+                      <th className="text-left py-3 px-4 font-semibold text-white">Year</th>
+                      <th className="text-right py-3 px-4 font-semibold text-white">Turnover (in Cr.)</th>
                     </tr>
                   </thead>
                   <tbody>
                     {hillbrowData.map((row, index) => (
                       <motion.tr
                         key={row.year}
-                        className="border-b border-gray-200 hover:bg-[#C39A41] transition-colors"
+                        className="border-b border-gray-700 hover:bg-[#C39A41]/20 transition-colors"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
                         viewport={{ once: true, amount: 0.3 }}
                       >
-                        <td className="py-3 px-4 text-gray-700">{row.year}</td>
-                        <td className="py-3 px-4 text-right font-semibold text-gray-900">{row.turnover}</td>
+                        <td className="py-3 px-4 text-gray-300">{row.year}</td>
+                        <td className="py-3 px-4 text-right font-semibold text-white">{row.turnover}</td>
                       </motion.tr>
                     ))}
                   </tbody>

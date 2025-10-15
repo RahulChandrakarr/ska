@@ -36,8 +36,10 @@ export default function OurPeople() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">  
+    <section className="py-20 bg-black relative">
+      {/* Circular pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-bl from-[#C39A41]/6 via-transparent to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">  
         
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -51,7 +53,7 @@ export default function OurPeople() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+              className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
             >
               • Our People
             </motion.div>
@@ -60,7 +62,7 @@ export default function OurPeople() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 "
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 "
             >
               Guided by visionary leaders who bring 
               <motion.span
@@ -79,7 +81,7 @@ export default function OurPeople() {
             {teamRoles.map((role, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
@@ -87,7 +89,7 @@ export default function OurPeople() {
                 whileHover={{ y: -5 }}
               >
                 <motion.h3
-                  className="text-xl font-bold text-gray-900 mb-4"
+                  className="text-xl font-bold text-white mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 1.0 + index * 0.1 }}
@@ -96,7 +98,7 @@ export default function OurPeople() {
                   {role.role}
                 </motion.h3>
                 <motion.p
-                  className="text-gray-700 leading-relaxed"
+                  className="text-gray-300 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
@@ -109,14 +111,14 @@ export default function OurPeople() {
           </div>
 
           <motion.div
-            className="bg-white rounded-2xl shadow-lg p-8 md:p-12"
+            className="bg-gray-900 rounded-2xl shadow-lg p-8 md:p-12 border border-gray-800"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.4 }}
             viewport={{ once: true, amount: 0.3 }}
           >
             <motion.h3
-              className="text-2xl font-bold text-gray-900 mb-8 text-center"
+              className="text-2xl font-bold text-white mb-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.6 }}
@@ -134,7 +136,7 @@ export default function OurPeople() {
             >
               <div>
                 <motion.p
-                  className="text-lg text-gray-700 mb-6"
+                  className="text-lg text-gray-300 mb-6"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 2.0 }}

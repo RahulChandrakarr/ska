@@ -32,8 +32,10 @@ export default function OurExpertise() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-black relative">
+      {/* Horizontal pattern overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#C39A41]/3 to-transparent"></div>
+      <div className="container mx-auto px-4 relative z-10">
        
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -47,7 +49,7 @@ export default function OurExpertise() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-sm font-medium text-gray-600 mb-4 lg:w-1/2"
+              className="text-sm font-medium text-gray-300 mb-4 lg:w-1/2"
             >
               • Our Expertise
             </motion.div>
@@ -56,7 +58,7 @@ export default function OurExpertise() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 "
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 "
             >
               Delivering exceptional results through 
               <motion.span
@@ -75,7 +77,7 @@ export default function OurExpertise() {
             {expertiseAreas.map((area, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="bg-gray-900 rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
@@ -83,7 +85,7 @@ export default function OurExpertise() {
                 whileHover={{ y: -5 }}
               >
                 <motion.h3
-                  className="text-xl font-bold text-gray-900 mb-4"
+                  className="text-xl font-bold text-white mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 1.0 + index * 0.1 }}
@@ -92,7 +94,7 @@ export default function OurExpertise() {
                   {area.title}
                 </motion.h3>
                 <motion.p
-                  className="text-gray-600 leading-relaxed"
+                  className="text-gray-300 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
