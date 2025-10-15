@@ -16,7 +16,7 @@ const Navbar = () => {
     { name: 'Services', href: '/services' },
     { name: 'Projects', href: '/projects' },
     { name: 'Ongoing', href: '/ongoing-projects' },
-    { name: 'Contact', href: '/contact' },
+    // { name: 'Contact', href: '/contact' },
   ];
 
   const toggleMenu = () => {

@@ -133,7 +133,7 @@ This message was sent from the SKA Group website contact form.
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Address</h3>
-                    <p className="text-gray-600">SKA Group, 104, 1st Floor, Opp. Royal Plaza, Old Rajendra Nagar, C.G. 492001</p>
+                    <p className="text-gray-600">SKA Group, NH-6, Road, near Treasure Island Mall, opposite College of Agriculture, Serikhedi, Jora, Chhattisgarh 492012</p>
                   </div>
                 </motion.div>
 
@@ -296,19 +296,19 @@ This message was sent from the SKA Group website contact form.
               Find Us Here
             </motion.h2>
             
-            {/* Map Placeholder */}
-            <div className="w-full h-96 bg-gray-200 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-[#C39A41] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">Interactive Map</h3>
-                <p className="text-gray-500">SKA Group Office Location</p>
-                <p className="text-sm text-gray-400 mt-2">104, 1st Floor, Opp. Royal Plaza, Old Rajendra Nagar, C.G. 492001</p>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="w-full h-96 rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1478.5!2d81.7149351!3d21.237823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28c3002d1b7f51%3A0xe24113e4fd2eca7f!2sNH-6%2C%20Road%2C%20near%20Treasure%20Island%20Mall%2C%20opposite%20College%20of%20Agriculture%2C%20Serikhedi%2C%20Jora%2C%20Chhattisgarh%20492012!5e0!3m2!1sen!2sin!4v1705123456789!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="SKA Group Office Location"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </motion.div>

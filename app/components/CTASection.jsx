@@ -23,7 +23,7 @@ export default function CTASection() {
             className="text-center mb-12"
           >
             <motion.div
-              className="flex items-center justify-center mb-8"
+              className="flex items-center justify-center"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -38,14 +38,14 @@ export default function CTASection() {
               />
             </motion.div>
             
-            <motion.h1
+            {/* <motion.h1
               className="text-4xl md:text-5xl font-bold text-white mb-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               SKA GROUP
-            </motion.h1>
+            </motion.h1> */}
             
             <motion.p
               className="text-lg text-gray-300"
