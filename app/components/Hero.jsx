@@ -24,8 +24,8 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
-        <div className="max-w-6xl mx-auto">
+      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32 flex items-center justify-center min-h-screen">
+        <div className="max-w-6xl mx-auto text-center">
           {/* Company Logo/Name */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -35,7 +35,7 @@ export default function Hero() {
             className="text-center mb-8"
           >
             <motion.h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4"
+              className=" hidden md:flex justify-center text-5xl md:text-7xl lg:text-8xl font-bold mb-4"
               initial={{ scale: 0.8 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
