@@ -17,7 +17,7 @@ const ongoingProjects = [
     id: 2,
     title: "Bilaspur Municipal Corporation Project",
     description: "Comprehensive municipal infrastructure development project in Bilaspur, including urban planning and civic amenities construction.",
-    image: "/Images/ongoing-projects/BilaspurMunicipalCorporationProject.jpg",
+    image: "/Images/ongoing-projects/BilaspurMunicipalCorporationProject.jpeg",
     status: "Active Construction",
     progress: 60
   },
@@ -111,7 +111,7 @@ export default function OngoingProjects() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
               
               {/* Project Info Overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-8">

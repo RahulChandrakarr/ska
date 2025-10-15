@@ -39,7 +39,7 @@ const ongoingProjects = [
     id: 4,
     title: "Bilaspur Municipal Corporation Project",
     description: "This urban development initiative is under active execution, enhancing municipal facilities and road networks to improve public infrastructure and accessibility across the city.",
-    image: "/Images/ongoing-projects/BilaspurMunicipalCorporationProject.jpg",
+    image: "/Images/ongoing-projects/BilaspurMunicipalCorporationProject.jpeg",
     design: "right-image",
     category: "Urban Development",
     status: "In Progress",

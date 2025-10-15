@@ -23,7 +23,7 @@ const services = [
     id: 3,
     title: "Mass Earth Excavation",
     description: "At SKA Group, we tackle large-scale excavation projects with expertise and precision. Our mass earth excavation services allow us to efficiently move vast quantities of earth and rock, creating the foundation for canals, dams, and other major infrastructure projects. With modern machinery and a skilled workforce, we ensure that every excavation is executed safely, on time, and to the highest quality standards, providing a solid base for long-lasting construction.",
-    image: "/Images/our-services/Mass Earth Excavation.jpg",
+    image: "/Images/our-services/heavy-excavator-digging-day-light.jpg",
     design: "left-image",
   },
   {
@@ -44,7 +44,7 @@ const services = [
     id: 6,
     title: "Earthwork & Site Grading",
     description: "Transforming raw terrain into a solid foundation is at the heart of our expertise. At SKA Group, our earthwork and site grading services prepare every construction site with precision and care. Using advanced machinery and a skilled workforce, we cut, fill, and level the land to create stable, well-drained surfaces. This meticulous preparation ensures that every project begins on the strongest possible footing, combining efficiency, safety, and long-lasting quality.",
-    image: "/Images/our-services/Mass Earth Excavation.jpg",
+    image: "/Images/our-services/close-up-worker-backhoe-working-construction-site.jpg",
     design: "right-image",
   },
   {
