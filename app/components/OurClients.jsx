@@ -5,84 +5,21 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const clients = [
-  {
-    id: 1,
-    name: "South East Central Railway",
-    logo: "/Images/our-clients/logos/secr-removebg-preview.png",
-    category: "Government"
-  },
-  {
-    id: 2,
-    name: "IRCON International Limited",
-    logo: "/Images/our-clients/logos/images-Photoroom.png",
-    category: "Infrastructure"
-  },
-  {
-    id: 3,
-    name: "SARDA ENERGY & MINERALS LTD",
-    logo: "/Images/our-clients/logos/sarda_logo_01.png",
-    category: "Energy"
-  },
-  {
-    id: 4,
-    name: "Public Works Department",
-    logo: "/Images/our-clients/logos/download (4)-Photoroom.png",
-    category: "Government"
-  },
-  {
-    id: 5,
-    name: "ISL ENERGY LIMITED",
-    logo: "/Images/our-clients/logos/download-removebg-preview.png",
-    category: "Energy"
-  },
-  {
-    id: 6,
-    name: "JINDAL POWER",
-    logo: "/Images/our-clients/logos/download (3)-Photoroom.png",
-    category: "Power"
-  },
-  {
-    id: 7,
-    name: "NECO GROUP OF INDUSTRIES",
-    logo: "/Images/our-clients/logos/download (17)-Photoroom.png",
-    category: "Industrial"
-  },
-  {
-    id: 8,
-    name: "NBCC",
-    logo: "/Images/our-clients/logos/NBCC_ANNUAL_REPORT_2014_15.svg.png",
-    category: "Construction"
-  },
-  {
-    id: 9,
-    name: "SHRI BAJRANG",
-    logo: "/Images/our-clients/logos/download (2)-Photoroom.png",
-    category: "Power & Steel"
-  },
-  {
-    id: 10,
-    name: "CGWRD",
-    logo: "/Images/our-clients/logos/download (16)-Photoroom.png",
-    category: "Water Resources"
-  },
-  {
-    id: 11,
-    name: "RES",
-    logo: "/Images/our-clients/logos/download (15)-Photoroom.png",
-    category: "Engineering"
-  },
-  {
-    id: 12,
-    name: "PWD",
-    logo: "/Images/our-clients/logos/download (11)-Photoroom.png",
-    category: "Government"
-  },
-  {
-    id: 13,
-    name: "Infrastructure Development",
-    logo: "/Images/our-clients/logos/download (14).png",
-    category: "Development"
-  }
+  "/Images/our-clients/logos/secr-removebg-preview.png",
+  "/Images/our-clients/logos/images-Photoroom.png",
+  "/Images/our-clients/logos/sarda_logo_01.png",
+  "/Images/our-clients/logos/download (4)-Photoroom.png",
+  "/Images/our-clients/logos/download-removebg-preview.png",
+  "/Images/our-clients/logos/download (3)-Photoroom.png",
+  "/Images/our-clients/logos/download (17)-Photoroom.png",
+  "/Images/our-clients/logos/NBCC_ANNUAL_REPORT_2014_15.svg.png",
+  "/Images/our-clients/logos/WhatsApp Image 2025-10-17 at 10.47.56 PM (1).jpeg",
+  "/Images/our-clients/logos/download (16)-Photoroom.png",
+  "/Images/our-clients/logos/download (15)-Photoroom.png",
+  "/Images/our-clients/logos/download (11)-Photoroom.png",
+  "/Images/our-clients/logos/WhatsApp Image 2025-10-17 at 10.47.56 PM.jpeg",
+  "/Images/our-clients/logos/WhatsApp Image 2025-10-17 at 10.46.44 PM.jpeg",
+  "/Images/our-clients/logos/WhatsApp Image 2025-10-17 at 10.43.35 PM (1).jpeg"
 ]
 
 export default function OurClients() {
@@ -140,14 +77,14 @@ export default function OurClients() {
           <div className="relative overflow-hidden">
             <div className="flex gap-6 md:gap-8 animate-scroll">
               {/* First set of clients */}
-              {clients.map((client, index) => (
+              {clients.map((logo, index) => (
                 <div
-                  key={`first-${client.id}`}
+                  key={`first-${index}`}
                   className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#3d3d3d] rounded-lg p-2"
                 >
                   <Image
-                    src={client.logo}
-                    alt={client.name}
+                    src={logo}
+                    alt={`Client ${index + 1}`}
                     width={120}
                     height={80}
                     className="object-contain filter grayscale w-full h-full bg-[#3d3d3d]"
@@ -155,14 +92,14 @@ export default function OurClients() {
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
-              {clients.map((client, index) => (
+              {clients.map((logo, index) => (
                 <div
-                  key={`second-${client.id}`}
+                  key={`second-${index}`}
                   className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#3d3d3d] rounded-lg p-2"
                 >
                   <Image
-                    src={client.logo}
-                    alt={client.name}
+                    src={logo}
+                    alt={`Client ${index + 1}`}
                     width={120}
                     height={80}
                     className="object-contain filter grayscale w-full h-full bg-[#3d3d3d]"
@@ -170,14 +107,14 @@ export default function OurClients() {
                 </div>
               ))}
               {/* Third set for extra smoothness */}
-              {clients.map((client, index) => (
+              {clients.map((logo, index) => (
                 <div
-                  key={`third-${client.id}`}
+                  key={`third-${index}`}
                   className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#3d3d3d] rounded-lg p-2"
                 >
                   <Image
-                    src={client.logo}
-                    alt={client.name}
+                    src={logo}
+                    alt={`Client ${index + 1}`}
                     width={120}
                     height={80}
                     className="object-contain filter grayscale w-full h-full bg-[#3d3d3d]"
