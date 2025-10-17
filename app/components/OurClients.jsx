@@ -8,79 +8,79 @@ const clients = [
   {
     id: 1,
     name: "South East Central Railway",
-    logo: "/Images/our-clients/b9ff03116249eb20a13bec6a2c4a474493b3da2f.png",
+    logo: "/Images/our-clients/logos/secr-removebg-preview.png",
     category: "Government"
   },
   {
     id: 2,
     name: "IRCON International Limited",
-    logo: "/Images/our-clients/719029823ed0a46f3f4c0629b95e5767615a61ef.png",
+    logo: "/Images/our-clients/logos/images-Photoroom.png",
     category: "Infrastructure"
   },
   {
     id: 3,
     name: "SARDA ENERGY & MINERALS LTD",
-    logo: "/Images/our-clients/a1e6060b949cd5332621319d0d2a8ac18bd83932.png",
+    logo: "/Images/our-clients/logos/sarda_logo_01.png",
     category: "Energy"
   },
   {
     id: 4,
     name: "Public Works Department",
-    logo: "/Images/our-clients/43bc01333aa7c5723fc24a838ca1ac2762712191.png",
+    logo: "/Images/our-clients/logos/download (4)-Photoroom.png",
     category: "Government"
   },
   {
     id: 5,
     name: "ISL ENERGY LIMITED",
-    logo: "/Images/our-clients/518d1038ebe43de7f6a55a018cba4908069d8e1a.png",
+    logo: "/Images/our-clients/logos/download-removebg-preview.png",
     category: "Energy"
   },
   {
     id: 6,
     name: "JINDAL POWER",
-    logo: "/Images/our-clients/0ba963b0d4931163f23d81b062ba16bcae15ffc2.png",
+    logo: "/Images/our-clients/logos/download (3)-Photoroom.png",
     category: "Power"
   },
   {
     id: 7,
     name: "NECO GROUP OF INDUSTRIES",
-    logo: "/Images/our-clients/252c0d426a66f20db3b51ec908aeacf96180f1e5.png",
+    logo: "/Images/our-clients/logos/download (17)-Photoroom.png",
     category: "Industrial"
   },
   {
     id: 8,
     name: "NBCC",
-    logo: "/Images/our-clients/40fcf0cea8ec106465c52a7a5d9cc6d42a4fb522.png",
+    logo: "/Images/our-clients/logos/NBCC_ANNUAL_REPORT_2014_15.svg.png",
     category: "Construction"
   },
   {
     id: 9,
     name: "SHRI BAJRANG",
-    logo: "/Images/our-clients/da7653584e41d8d4e17abdc1080bae42700a4ca6.png",
+    logo: "/Images/our-clients/logos/download (2)-Photoroom.png",
     category: "Power & Steel"
   },
   {
     id: 10,
     name: "CGWRD",
-    logo: "/Images/our-clients/0072b895d31c30ccb5228f5d589de67d504d97fa.png",
+    logo: "/Images/our-clients/logos/download (16)-Photoroom.png",
     category: "Water Resources"
   },
   {
     id: 11,
     name: "RES",
-    logo: "/Images/our-clients/aa2d6db3081316568046b65bcfc7bacead3e2a1a.png",
+    logo: "/Images/our-clients/logos/download (15)-Photoroom.png",
     category: "Engineering"
   },
   {
     id: 12,
     name: "PWD",
-    logo: "/Images/our-clients/9b09d3a716a4a314e9c818b78e6f926c77eae79d.png",
+    logo: "/Images/our-clients/logos/download (11)-Photoroom.png",
     category: "Government"
   },
   {
     id: 13,
     name: "Infrastructure Development",
-    logo: "/Images/our-clients/8b961382ef4685bd0982117ce0f6782078d0100b (2).png",
+    logo: "/Images/our-clients/logos/download (14).png",
     category: "Development"
   }
 ]
@@ -143,7 +143,7 @@ export default function OurClients() {
               {clients.map((client, index) => (
                 <div
                   key={`first-${client.id}`}
-                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#eeeeee] rounded-lg p-2"
+                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#3d3d3d] rounded-lg p-2"
                 >
                   <Image
                     src={client.logo}
@@ -158,7 +158,7 @@ export default function OurClients() {
               {clients.map((client, index) => (
                 <div
                   key={`second-${client.id}`}
-                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#eeeeee] rounded-lg p-2"
+                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#3d3d3d] rounded-lg p-2"
                 >
                   <Image
                     src={client.logo}
@@ -173,7 +173,7 @@ export default function OurClients() {
               {clients.map((client, index) => (
                 <div
                   key={`third-${client.id}`}
-                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#eeeeee] rounded-lg p-2"
+                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#3d3d3d] rounded-lg p-2"
                 >
                   <Image
                     src={client.logo}

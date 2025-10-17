@@ -4,7 +4,7 @@ import ContactForm from './components/ContactForm'
 
 export default function Contact() {
   return (
-    <div>
+    <div className='overflow-x-hidden w-screen'>
       <OtherPagesHeroSection 
         backgroundImage="/Images/contact-us/contact-us-hero-section.jpg"
         pageTitle="CONTACT US"

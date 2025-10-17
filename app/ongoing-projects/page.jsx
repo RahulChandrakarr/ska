@@ -5,7 +5,7 @@ import CTASection from '../components/CTASection'
 
 export default function OngoingProjects() {
   return (
-    <div>
+    <div className='overflow-x-hidden w-screen'>
       <OtherPagesHeroSection 
         backgroundImage="/Images/ongoing-projects/ongoing-projects-hero-section.jpg"
         pageTitle="ONGOING PROJECTS"

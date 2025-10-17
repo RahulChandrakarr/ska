@@ -5,7 +5,7 @@ import CTASection from '../components/CTASection'
 
 export default function Services() {
   return (
-    <div>
+    <div className='overflow-x-hidden w-screen'>
       <OtherPagesHeroSection 
         backgroundImage="/Images/service-section/services-section-hero-section.jpg"
         pageTitle="SERVICES"
