@@ -150,7 +150,7 @@ export default function OurClients() {
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain filter grayscale w-full h-full"
+                    className="object-contain filter grayscale w-full h-full bg-[#3d3d3d]"
                   />
                 </div>
               ))}
@@ -165,7 +165,7 @@ export default function OurClients() {
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain filter grayscale w-full h-full"
+                    className="object-contain filter grayscale w-full h-full bg-[#3d3d3d]"
                   />
                 </div>
               ))}
@@ -180,7 +180,7 @@ export default function OurClients() {
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain filter grayscale w-full h-full"
+                    className="object-contain filter grayscale w-full h-full bg-[#3d3d3d]"
                   />
                 </div>
               ))}
