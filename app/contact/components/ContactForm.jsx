@@ -153,12 +153,13 @@ This message was sent from the SKA Group website contact form.
                     </svg>
                   </div>
                   <div>
+                    
                     <h3 className="text-lg font-semibold text-white mb-1">Call Us</h3>
-                    <p className="text-gray-300">91-9826000000</p>
+                    <p className="text-gray-300">+91 78060 81661</p> 
                   </div>
                 </motion.div>
 
-                {/* Email */}
+                {/* Email dfgsdfgsd */}
                 <motion.div
                   className="flex items-start gap-4"
                   initial={{ opacity: 0, y: 20 }}
