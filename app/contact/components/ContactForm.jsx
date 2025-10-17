@@ -255,7 +255,7 @@ This message was sent from the SKA Group website contact form.
                     onChange={handleInputChange}
                     placeholder="Tell us about your project"
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C39A41] focus:border-transparent transition-colors duration-300 resize-none placeholder-gray-400"
                     required
                   />
                 </div>
