@@ -30,7 +30,7 @@ export default function page() {
     <div className='overflow-x-hidden w-screen'>
       <OtherPagesHeroSection 
         backgroundImage="/Images/about-us/about-us-hero-section.jpg"
-        pageTitle="ABOUT USsdfasdf"
+        pageTitle="ABOUT US"
         mainText="We build the foundations of progress, shaping tomorrow with integrity and innovation"
         altText="About us hero section background"
       />
