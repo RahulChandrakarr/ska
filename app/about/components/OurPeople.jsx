@@ -90,7 +90,7 @@ export default function OurPeople() {
               viewport={{ once: true, amount: 0.3 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 "
             >
-              Guided by visionary leaders who bring 
+              Guided by visionary leaders who bring  
               <motion.span
                 className="text-[#C39A41]"
                 initial={{ opacity: 0, scale: 0.8 }}

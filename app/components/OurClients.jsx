@@ -143,14 +143,14 @@ export default function OurClients() {
               {clients.map((client, index) => (
                 <div
                   key={`first-${client.id}`}
-                  className="group flex-shrink-0 flex items-center justify-center"
+                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#eeeeee] rounded-lg p-2"
                 >
                   <Image
                     src={client.logo}
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain filter grayscale"
+                    className="object-contain filter grayscale w-full h-full"
                   />
                 </div>
               ))}
@@ -158,14 +158,14 @@ export default function OurClients() {
               {clients.map((client, index) => (
                 <div
                   key={`second-${client.id}`}
-                  className="group flex-shrink-0 flex items-center justify-center"
+                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#eeeeee] rounded-lg p-2"
                 >
                   <Image
                     src={client.logo}
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain filter grayscale"
+                    className="object-contain filter grayscale w-full h-full"
                   />
                 </div>
               ))}
@@ -173,14 +173,14 @@ export default function OurClients() {
               {clients.map((client, index) => (
                 <div
                   key={`third-${client.id}`}
-                  className="group flex-shrink-0 flex items-center justify-center"
+                  className="group flex-shrink-0 flex items-center justify-center w-32 h-20 bg-[#eeeeee] rounded-lg p-2"
                 >
                   <Image
                     src={client.logo}
                     alt={client.name}
                     width={120}
                     height={80}
-                    className="object-contain filter grayscale"
+                    className="object-contain filter grayscale w-full h-full"
                   />
                 </div>
               ))}

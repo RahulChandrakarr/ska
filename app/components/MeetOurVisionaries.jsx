@@ -86,7 +86,7 @@ export default function MeetOurVisionaries() {
   return (
     <section className="py-20 bg-black relative">
       {/* Diagonal pattern overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-[#C39A41]/3 to-transparent"></div>
+      <div className="absolute inset-0  to-transparent"></div>
       <div className="container mx-auto px-4 relative z-10">
        {/* Section Header */}
         {/* Header */}
@@ -113,7 +113,7 @@ export default function MeetOurVisionaries() {
             viewport={{ once: true, amount: 0.3 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 g:w-1/2"
           >
-            Guided by visionary leaders who bring{" "}
+            Guided by visionary leaders who bring{" "} 
             <motion.span
               className="text-[#C39A41]"
               initial={{ opacity: 0, scale: 0.8 }}
@@ -163,7 +163,7 @@ export default function MeetOurVisionaries() {
                 className="group"
               >
                 <motion.div
-                  className="bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-800"
+                  className="rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden "
                   
                 >
                   {/* Profile Image */}
@@ -175,9 +175,9 @@ export default function MeetOurVisionaries() {
                       src={visionary.image}
                       alt={visionary.name}
                       fill
-                      className="object-contain  transition-transform duration-500"
+                      className="object-contain   transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                   
                   </motion.div>
 
                   {/* Content */}
