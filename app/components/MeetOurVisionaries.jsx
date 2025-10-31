@@ -10,7 +10,7 @@ const visionaries = [
     name: "Mr. Sunil Kumar Agrawal",
     position: "Visionary Leader",
     description: "A remarkable individual with a love for nature and a down-to-earth attitude, he is involved in business, social work, religion, politics, and family. His versatility and genuine desire to help others inspire those aiming to make a positive impact while staying humble.",
-    image: "/Images/our-team/MrSunilKumarAgrawal.png",
+    image: "/Images/our-team/SunilKumarAgrawal.png",
     expertise: ["Business", "Social Work", "Leadership"],
     expertiseIcons: {
       "Business": (
@@ -35,7 +35,7 @@ const visionaries = [
     name: "Mr. Anil Kumar Agrawal",
     position: "Dedicated Professional",
     description: "A dedicated individual who values a friendly and harmonious work environment, he approaches his responsibilities with seriousness and diligence. He fosters teamwork, ensuring staff feel supported and valued. His genuine concern for others' well-being and reliability make him a trusted member of any organization, balancing friendliness with productivity.",
-    image: "/Images/our-team/MrAnilKumarAgrawal.png",
+    image: "/Images/our-team/MrSunilKumarAgrawal.png",
     expertise: ["Teamwork", "Diligence", "Reliability"],
     expertiseIcons: {
       "Teamwork": (
@@ -60,7 +60,7 @@ const visionaries = [
     name: "Mr. Sushil Agrawal",
     position: "Entrepreneurial Leader",
     description: "An exemplary individual known for dedication and a strong work ethic, he consistently strives for success. As a workaholic, he commits fully to his professional tasks, showcasing determination and focus. His entrepreneurial spirit makes him an invaluable asset to any team or organization.",
-    image: "/Images/our-team/SunilKumarAgrawal.png",
+    image: "/Images/our-team/MrAnilKumarAgrawal.png",
     expertise: ["Entrepreneurship", "Dedication", "Success"],
     expertiseIcons: {
       "Entrepreneurship": (
