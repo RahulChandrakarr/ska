@@ -59,7 +59,7 @@ const services = [
 export default function OurServices() {
   return (
     <section className="py-20 bg-black relative">
-      {/* Subtle wave pattern overlay */}
+     
       <div className="absolute inset-0 bg-gradient-to-br from-[#C39A41]/4 via-transparent to-[#C39A41]/2"></div>
     <div className="container mx-auto px-4 relative z-10">
      {/* Section Header */}
