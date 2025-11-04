@@ -11,6 +11,13 @@ const raleway = Raleway({
 export const metadata = {
   title: "SKA Group - Building the Future, Today",
   description: "SKA Group is a leading construction company in Chhattisgarh, delivering quality infrastructure solutions with decades of excellence. Your trusted partner for exceptional construction projects.",
+  icons: {
+    icon: [
+      { url: "/fevicon.png", type: "image/png" },
+    ],
+    shortcut: "/fevicon.png",
+    apple: "/fevicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
